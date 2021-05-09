@@ -1,0 +1,216 @@
+/* Custom SCSS/SASS Files */
+@import "variables";
+@import "mixins";
+@import "custom";
+/* UIKit */
+@import "variables-theme.scss";
+@import "mixins-theme.scss";
+@import "uikit-theme.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pattaya&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+
+.content {
+  border-top: 10px solid #ff7a00;
+  border-bottom: 10px solid #ffb800;
+  box-sizing: border-box;
+  height: 100%;
+  background-image: url("../assets/images/bg.png");
+  width: 70%;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: "Montserrat";
+  float: left;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.photoburg {
+  height: 220px;
+  border-radius: 10px;
+  padding-left: 0px;
+  margin-right: 20px;
+}
+
+.produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.produto h3 {
+  color: #4b4b4b;
+  margin-bottom: 0px;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.produto h6 {
+  font-weight: 700;
+
+  color: #ffb800;
+  font-size: 18px;
+  margin-top: 0px;
+  font-family: "Montserrat";
+  margin-bottom: 0px;
+}
+
+.produto ul {
+  padding-left: 0px;
+  margin-top: 10px;
+}
+
+.produto ul li {
+  color: #4b4b4b;
+  list-style: none;
+}
+
+.btn-comprar {
+  background-color: #c92e2e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  padding: 7px 50px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn-comprar:hover {
+  background-color: #f14343;
+}
+
+.btn-comprar:active {
+  background-color: #9f1919;
+}
+
+.preco {
+  background-color: #760fc7;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 14px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin-top: -15px;
+}
+
+h2 {
+  font-family: "Pattaya";
+  color: #ff7a00;
+  margin-bottom: 40px;
+}
+
+.pedido {
+  float: right;
+  width: 30%;
+  box-sizing: border-box;
+  height: 100%;
+  border-top: 10px solid #ffb800;
+  border-bottom: 10px solid #ff7a00;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px;
+  font-family: "Montserrat";
+  color: #4b4b4b;
+  overflow: auto;
+  position: relative;
+}
+
+.pedido h3 {
+  font-weight: 700;
+  font-family: "Montserrat";
+  color: #4b4b4b;
+  margin: 0px;
+}
+
+.pedido h6 {
+  font-weight: 700;
+  font-family: "Montserrat";
+  color: #ffb800;
+  margin: 0px;
+}
+
+.uk-leader-fill-content::before {
+  content: ".";
+}
+:root {
+  --uk-leader-fill-content: ".";
+}
+
+.adicionais .adicional {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #ccc;
+  padding: 7px 0px;
+}
+
+.adicionais .adicional .item .titulo {
+  font-weight: 700;
+}
+
+.adicionais .adicional .item .valor {
+  font-size: 14px;
+}
+
+.adicionais .adicional .quantidade {
+  display: flex;
+  align-items: center;
+}
+
+.und-pedido {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.quantidade {
+  display: flex;
+  justify-content: space-around;
+  width: 12%;
+  box-sizing: border-box;
+}
+
+.btn-qtd {
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn-qtd:hover {
+  background-color: #9f1919;
+  color: #fff;
+}
+
+.btn-qtd:active {
+  color: #fff;
+  background-color: #c92e2e;
+}
+
+.total-pedido {
+  width: 100%;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0px;
+  background-color: #ffb800;
+  color: #fff;
+  font-weight: 700;
+  background-image: url("../assets/images/bg.png");
+}
